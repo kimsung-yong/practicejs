@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div">
+        <p>문단 1</p>
+        <p>문단 2</p>
+        <p>문단 3</p>
+    </div>
+    <script>
+        var para = document.createElement("p");
+        var text = document.createTextNode("새로 추가한 문단입니다");
+
+        para.appendChild(text);
+
+        var div = document.getElementById("div");
+        div.insertBefore(para, div.childNodes[1]);
+
+    </script>
+</body>
+</html>

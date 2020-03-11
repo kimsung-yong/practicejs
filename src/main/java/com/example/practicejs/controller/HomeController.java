@@ -12,18 +12,26 @@ public class HomeController {
     }
     @GetMapping("/editnode")
     public String editnode(){
-        return "view/editnode";
+        return "view/dom/editnode";
     }
     @GetMapping("/textcontent")
     public String textcontent(){
-        return "view/textcontent";
+        return "view/dom/textcontent";
     }
     @GetMapping("/innertext")
     public String innertext(){
-        return "view/innertext";
+        return "view/dom/innertext";
     }
     @GetMapping("/appendchild")
     public String appendchild(){
-        return "view/appendchild";
+        return "view/dom/appendchild";
+    }
+    @GetMapping("/insertbefore")
+    public String insertbefore(){
+        return "view/dom/insertbefore";
+    }
+    @GetMapping("/movenode")
+    public String movenode(){
+        return "view/dom/movenode";
     }
 }

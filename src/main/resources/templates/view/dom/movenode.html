@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div"><p>문단 1</p><p>문단 2</p><p>문단 3</p></div>
+    <script>
+        var div = document.getElementById("div");
+        var para = div.childNodes[0];
+        div.appendChild(para);
+    </script>
+</body>
+</html>
