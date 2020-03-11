@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="para">이것은 <b>문단</b> 이다</p>
+<script>
+    var para = document.querySelector("#para");
+    document.write("nodevalue =" + para.firstChild.nodeValue+"<br>");
+    document.write("textContent =" + para.textContent+"<br>");
+    document.write("innerText = " + para.innerHTML+"<br>");
+    document.write("outterText = " + para.outerHTML+"<br>");
+</script>
+</body>
+</html>

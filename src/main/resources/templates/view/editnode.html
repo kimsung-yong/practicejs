@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="para">이것은 문단입니다.</p>
+    <script>
+        var para = document.getElementById("para");
+        var text = para.firstChild;
+        text.nodeValue = "이것은 수정한 문단입니다";
+
+    </script>
+</body>
+</html>

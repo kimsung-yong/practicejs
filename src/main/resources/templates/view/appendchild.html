@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>문단 하나만 있습니다</p>
+    <script>
+        //p태그 생성하여 para에 주입
+        var para = document.createElement("p");
+        //텍스트 노드 추가
+        var text = document.createTextNode("추가한 문단입니다");
+        // 텍스트 노드를 para에 자식으로 주입
+        para.appendChild(text);
+        //dom객체에 para 주입 기본적으로 마지막 객체 뒤에 생성됨
+        document.body.appendChild(para);
+    </script>
+</body>
+</html>
