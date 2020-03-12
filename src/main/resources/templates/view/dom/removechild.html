@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>문단 1</p>
+    <p id="para">문단 2</p>
+    <p>문단 3</p>
+    <script>
+        var para = document.getElementById("para");
+        document.write(para.parentNode.nodeName);
+        para.parentNode.removeChild(para);
+
+    </script>
+</body>
+</html>

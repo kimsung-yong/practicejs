@@ -8,7 +8,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String index(){
-        return "view/index";
+        return "view/dom/index";
     }
     @GetMapping("/editnode")
     public String editnode(){
@@ -33,5 +33,13 @@ public class HomeController {
     @GetMapping("/movenode")
     public String movenode(){
         return "view/dom/movenode";
+    }
+    @GetMapping("/addattribute")
+    public String addattribute(){
+        return "view/dom/addattribute";
+    }
+    @GetMapping("/removechild")
+    public String removechild(){
+        return "view/dom/removechild";
     }
 }
